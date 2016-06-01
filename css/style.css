@@ -1,0 +1,36 @@
+/* Empty. Add your own CSS if you like */
+
+.login {
+}
+
+.login h1 {
+    padding-top: 70px;
+    text-align: center;
+    font: 300 90px/90px 'pt sans narrow', sans-serif;
+    color: #333;
+    margin: 0 0 0px 0;
+    max-width: 640px;
+    font-size: 64px;
+}
+
+.login h2 {
+    text-align: center;
+    color: #999;
+    font-family: 'pt sans';
+    font-size: 22px;
+}
+
+.login form {
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.login form .item {
+    border: none;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #ddd;
+}
+
+.login .invalid-credentials {
+}

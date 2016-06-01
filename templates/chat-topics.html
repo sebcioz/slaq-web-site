@@ -1,0 +1,10 @@
+<ion-view view-title="Rooms">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-icon-right" ng-repeat="topic in mainRoom.topics" type="item-text-wrap" href="#/chat/topics/{{topic.id}}">
+        <h2>{{topic.name}}</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

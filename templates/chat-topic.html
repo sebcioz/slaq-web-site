@@ -1,0 +1,20 @@
+<ion-view view-title="{{ topic.name }}">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-avatar" ng-repeat="message in topic.messages" type="item-text-wrap">
+        <img ng-src="{{ message.avatar_url }}">
+        <h2>{{message.username}}</h2>
+        <p>{{message.content}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+  <ion-footer-bar class="item-input-inset">
+    <label class="item-input-wrapper">
+      <input type="text" placeholder="Message..." ng-model="newMessageBody" ng-keyup="$event.keyCode == 13 && send()">
+    </label>
+    <button class="button button-small" ng-click="send()">
+      Send
+    </button>
+  </ion-footer-bar>
+</ion-view>

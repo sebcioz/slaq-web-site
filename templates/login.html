@@ -1,0 +1,23 @@
+<div class="login">
+  <h1>Slaq</h1>
+  <h2>A messaging app for teams</h2>
+
+  <form>
+    <div class="button button-full button-assertive invalid-credentials" ng-show="failed">
+      Invalid credentials
+    </div>
+    <div class="list">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Username</span>
+        <input type="text" ng-model="user.email" placeholder="Username">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Password</span>
+        <input type="password" ng-model="user.password" placeholder="Password">
+      </label>
+    </div>
+    <div class="padding">
+      <a class="button button-block button-calm activated" ng-click="login()">Login</a>
+    </div>
+  </form>
+</div>
